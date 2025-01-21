@@ -20,6 +20,8 @@ options_capitales = (
 
 answers_capitales = ("A", "A", "A", "A")
 
+
+
 questions_histoire = (
     "En quelle année a eu lieu la Révolution française?: ",
     "Qui a été le premier président des États-Unis?: ",
@@ -35,6 +37,8 @@ options_histoire = (
 )
 
 answers_histoire = ("A", "A", "A", "A")
+
+
 
 questions_calcul = (
     "Combien font 7 x 8 ?: ",
@@ -52,6 +56,8 @@ options_calcul = (
 
 answers_calcul = ("A", "A", "A", "A")
 
+
+
 questions_biologie = ("How many elements are in the periodic table?: ",
                        "Which animal lays the largest eggs?: ",
                        "What is the most abundant gas in Earth's atmosphere?: ",
@@ -66,7 +72,44 @@ options_biologie = (("A. 116", "B. 117", "C. 118", "D. 119"),
 
 answers_biologie = ("C", "D", "A", "A", "B")
 
-thèmes=["capitale","calcul","histoire","biologie"]
+
+
+questions_science = (
+    "What is the chemical symbol for water?: ",
+    "How many planets are in the solar system?: ",
+    "What is the speed of light?: ",
+    "What is the center of an atom called?: "
+)
+
+options_science = (
+    ("A. O2", "B. H2O", "C. CO2", "D. H2"),
+    ("A. 7", "B. 8", "C. 9", "D. 10"),
+    ("A. 300,000 km/s", "B. 150,000 km/s", "C. 100,000 km/s", "D. 200,000 km/s"),
+    ("A. Proton", "B. Neutron", "C. Nucleus", "D. Electron")
+)
+
+answers_science = ("B", "B", "A", "C")
+
+
+
+questions_geographie = (
+    "What is the largest ocean on Earth?: ",
+    "Which country has the longest coastline in the world?: ",
+    "What is the smallest country in the world?: ",
+    "Which continent is the Sahara Desert located on?: "
+)
+
+options_geographie = (
+    ("A. Atlantic", "B. Indian", "C. Pacific", "D. Arctic"),
+    ("A. Russia", "B. Canada", "C. Australia", "D. USA"),
+    ("A. Monaco", "B. Vatican City", "C. Liechtenstein", "D. San Marino"),
+    ("A. Asia", "B. Europe", "C. Africa", "D. South America")
+)
+
+answers_geographie = ("C", "B", "B", "C")
+
+
+thèmes=["capitale","calcul","histoire","biologie", "science", "géographie"]
 print("Choisis ton thème de QCM: ")
 for thème in thèmes:
     print(thème, end=", ")
